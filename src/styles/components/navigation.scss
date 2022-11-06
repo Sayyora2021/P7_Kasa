@@ -1,0 +1,42 @@
+.nav-active{
+    position: absolute;
+color: #FF6060;
+    
+}
+.home{
+    position: absolute;
+    right: 14%;
+    bottom: 25%;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    
+    /* or 34px */
+    
+    display: flex;
+    align-items: flex-end;
+    color: #FF6060;
+
+}
+
+.navigation{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    bottom: 15%;
+    width: 200px;
+}
+.header{
+    position: relative;
+    width: 1240px;
+    height: 68px;
+    left: 100px;
+    top: 30px; 
+   
+}
+.logo{
+    height: 68px;
+    width: 210.32 px;
+}

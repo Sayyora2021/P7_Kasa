@@ -1,0 +1,24 @@
+.banner-img {
+    background: #F7F7F7;
+    border-radius: 25px;
+     
+         
+   }
+.banner{
+   
+    position: relative;
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 100px
+    
+}
+.text{
+    position:absolute;
+    left:25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    text-align: center;
+
+}
