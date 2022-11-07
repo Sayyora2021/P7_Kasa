@@ -1,0 +1,24 @@
+@import "./_main.scss";
+
+.carts{
+    position: absolute;
+    width: 90%;
+    height: 829px;
+    left: 100px;
+    top: 60%;
+    background: #F7F7F7;
+border-radius: 25px;
+}
+.normTxt{
+    gap:30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    width :340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: $txtcolor;
+   display: flex;
+}
