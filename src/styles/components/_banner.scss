@@ -14,6 +14,7 @@
     left: 100px;
     top: 100px;
     padding-right:100px;
+    @include style;
 }
 .text{
     position:absolute;

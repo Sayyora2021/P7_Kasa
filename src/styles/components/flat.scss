@@ -1,0 +1,39 @@
+@import "./_main.scss";
+
+.table{
+    position:relative;
+    width:100%;
+    display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+}
+.flat{
+    width :340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+   padding:20px;
+}
+.carts{
+    position: absolute;
+    width: 90%;
+    height: 829px;
+    left: 100px;
+    top: 60%;
+    background: #F7F7F7;
+border-radius: 25px;
+}
+.flatTxt{
+    position:absolute;
+    left:60px;
+    top: 320px;
+    font-size: 18px;
+    width:50%;
+    @include style;
+}
+.normImg{
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

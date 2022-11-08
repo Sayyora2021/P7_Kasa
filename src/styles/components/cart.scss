@@ -10,15 +10,16 @@
 border-radius: 25px;
 }
 .normTxt{
-    gap:30px;
+    padding:30px;
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
-.box{
-    width :340px;
-    height: 340px;
-    border-radius: 10px;
-    background-color: $txtcolor;
-   display: flex;
-}
+// .box{
+//     width :340px;
+//     height: 340px;
+//     border-radius: 10px;
+//     background-color: $txtcolor;
+//    display: flex;
+//    padding:20px;
+// }
