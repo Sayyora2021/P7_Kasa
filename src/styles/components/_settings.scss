@@ -6,3 +6,14 @@ font-style: normal;
 font-weight: 500;
 }
 $white: #ffffff;
+
+body{
+    padding:60px 60px;
+    max-width:1600px;
+    margin:0 auto;
+    height:100vh; 
+    cursor:pointer;
+    @media screen and (max-width:650px){
+        padding:20px;
+    }
+}

@@ -3,17 +3,20 @@
 .carts{
     position: absolute;
     width: 90%;
-    height: 829px;
+   margin-left: 40px;
     left: 100px;
     top: 60%;
     background: #F7F7F7;
 border-radius: 25px;
+padding:40px;
 }
 .normTxt{
-    padding:30px;
+   margin:40px;
+   padding:40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 // .box{
 //     width :340px;

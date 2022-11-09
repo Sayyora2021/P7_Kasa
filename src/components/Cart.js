@@ -13,14 +13,9 @@ const Cart = () => {
   return (
     <section className="carts">
       <div className="normTxt">
-        <div>
-          {card.map((galery, index) => (
-            <Flat key={index} galery={galery} />
-          ))}
-        </div>
-
-        {/*  <li className="box">titre de location</li>
-        <li className="box">titre de location</li> */}
+        {card.map((galery, index) => (
+          <Flat key={index} galery={galery} />
+        ))}
       </div>
     </section>
   );
