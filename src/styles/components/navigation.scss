@@ -1,15 +1,10 @@
 @import "./_settings.scss";
 
 .nav-active {
-  position: absolute;
-  color: $txtcolor;
+  text-decoration: none;
 }
 .home {
-  position: absolute;
-  right: 14%;
-  bottom: 25%;
   font-size: 24px;
-  display: flex;
   color: $txtcolor;
   border-bottom: 2px solid white;
 
@@ -22,9 +17,14 @@
 }
 
 .navigation {
-  position: absolute;
-  left: 70%;
-  width: 280px;
+  width: 20%;
+  display: flex;
+  padding-right: 10px;
+  text-decoration: none;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
   @media screen and (max-width: 480px) {
     left: 180%;
   }
@@ -32,6 +32,8 @@
 .header {
   width: 100%;
   height: 68px;
+  display: flex;
+  justify-content: space-between;
   @media screen and (max-width: 480px) {
     margin: 30px;
   }

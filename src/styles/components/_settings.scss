@@ -1,8 +1,12 @@
+@import "./normalize.scss";
+@import "./reset.scss";
+
 $txtcolor: #ff6060;
 $white: #ffffff;
 
 body {
-  padding: 60px 60px;
+  padding: 60px;
+  width: 100%;
   max-width: 1600px;
   min-width: 1200px;
   margin: 0 auto;
@@ -12,6 +16,6 @@ body {
   font-style: normal;
   font-weight: 500;
   @media screen and (max-width: 480px) {
-    width: 1150px;
+    // width: 1150px;
   }
 }

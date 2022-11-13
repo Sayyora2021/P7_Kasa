@@ -5,10 +5,10 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-  transition: all 0.5s ease-in-out;
 
   &:hover {
-    transform: scale (1.1); //ne fonctionne pas
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-2px) scale (1.1); //ne fonctionne pas
   }
   @media screen and (max-width: 480px) {
     width: 100%;
@@ -18,7 +18,7 @@
 .normImg h2 {
   position: absolute;
   left: 60px;
-  top: 310px;
+  top: 80%;
   font-size: 18px;
   width: 50%;
 
