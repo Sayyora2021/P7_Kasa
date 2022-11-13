@@ -13,9 +13,7 @@
 }
 
 .banner {
-  width: 100%;
-  height: 223px;
-  margin-top: 30px;
+  @include banner;
   @media screen and (max-width: 480px) {
     width: 95%;
     height: 350px;
@@ -31,8 +29,8 @@
   font-size: 48px;
   color: $white;
   @media screen and (max-width: 480px) {
-    font-size: 34px;
-    left: 40%;
-    width: 260px;
+    font-size: 48px;
+    top: 30%;
+    width: 500px;
   }
 }

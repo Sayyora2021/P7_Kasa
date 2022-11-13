@@ -1,4 +1,5 @@
 import "../styles/components/flat.scss";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Flat = ({ galery }) => {
@@ -7,7 +8,12 @@ const Flat = ({ galery }) => {
       {/* <h1>{galery.id}</h1> */}
       <img src={galery.cover} alt="Appartement cosy" />
       <h2>{galery.title}</h2>
-      <div className="info">{/* <div>{galery.pictures}</div> */}</div>
+      <Link
+        to="/Lodge.js"
+        className={(nav) => (nav.isActive ? "nav-active" : "")}
+      >
+        <div className="info">{/* <div>{galery.pictures}</div> */}</div>
+      </Link>
     </div>
   );
 };
