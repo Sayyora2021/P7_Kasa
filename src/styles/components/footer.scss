@@ -1,4 +1,4 @@
-@import "./_main.scss";
+@import "./_settings.scss";
 
 .footer {
   position: relative;
@@ -7,14 +7,26 @@
   background: #000000;
   padding-top: 30px;
   margin-top: 20px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 480px) {
+    width: 850px;
+  }
 }
 .footlogo {
   position: absolute;
   top: 100px;
-  left: 700px;
+  left: 50%;
+  @media screen and (max-width: 480px) {
+    left: 350px;
+  }
 }
-.footerTxt {
-  @include style;
+.footer h3 {
+  position: absolute;
   color: $white;
   font-size: 24px;
+  left: 40%;
+  top: 150px;
+  @media screen and (max-width: 480px) {
+    left: 250px;
+  }
 }

@@ -1,19 +1,17 @@
-$txtcolor :#FF6060;
-
-@mixin style{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-}
+$txtcolor: #ff6060;
 $white: #ffffff;
 
-body{
-    padding:60px 60px;
-    max-width:1600px;
-    margin:0 auto;
-    height:100vh; 
-    cursor:pointer;
-    @media screen and (max-width:650px){
-        padding:20px;
-    }
+body {
+  padding: 60px 60px;
+  max-width: 1600px;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  cursor: pointer;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 500;
+  @media screen and (max-width: 480px) {
+    width: 1150px;
+  }
 }

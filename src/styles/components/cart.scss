@@ -1,26 +1,21 @@
-@import "./_main.scss";
+@import "./_settings.scss";
 
 .carts {
-  position: relative;
-  width: 90%;
-  left: 100px;
   background: #f7f7f7;
   border-radius: 25px;
   margin-top: 150px;
+  @media screen and (max-width: 480px) {
+    background: none;
+    margin-top: 20px;
+  }
 }
 .normTxt {
-  margin: 40px;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+  }
 }
-// .box{
-//     width :340px;
-//     height: 340px;
-//     border-radius: 10px;
-//     background-color: $txtcolor;
-//    display: flex;
-//    padding:20px;
-// }

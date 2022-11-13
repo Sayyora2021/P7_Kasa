@@ -6,7 +6,7 @@ import logo from "../assets/img/logo.png";
 const Navigation = () => {
   return (
     <div className="header">
-      <img src={logo} alt="Kasa" className="logo" />
+      <img src={logo} alt="Kasa" />
 
       <ul className="navigation">
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
