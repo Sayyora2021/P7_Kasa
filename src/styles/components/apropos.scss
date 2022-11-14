@@ -15,7 +15,7 @@
   }
 }
 .dropdown {
-  //   position: absolute;
+  position: relative;
   background-color: $txtcolor;
   width: 1100px;
   height: 47px;
@@ -23,12 +23,14 @@
   margin-top: 50px;
   margin-left: 250px;
 }
-.dropdown img {
-  //   position: relative;
-  width: 50px;
-  height: 50px;
+.fleche {
+  position: absolute;
+  width: 40px;
+  height: 30px;
   color: $white;
-  padding-left: 1110px;
+  left: 500px;
+  bottom: 15px;
+  transition: transform 2s;
 }
 .dropTxt {
   font-size: 24px;
@@ -39,4 +41,20 @@
 .flexBetween {
   display: flex;
   flex-direction: column;
+}
+.info {
+  position: absolute;
+  background-color: $background;
+  width: 1100px;
+  height: 150px;
+  left: 280px;
+  font-size: 24px;
+  color: $txtcolor;
+}
+.footer {
+  top: 600px;
+}
+.fleche:hover {
+  transition: transform 500ms ease-in-out;
+  transform-origin: bottom (-50%);
 }
