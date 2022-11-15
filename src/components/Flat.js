@@ -5,13 +5,12 @@ import React from "react";
 
 const Flat = ({ flat }) => {
   return (
-    <div className="normImg">
-      <img src={flat.cover} alt="Appartement cosy" />
-
-      <Link to={"/lodge"} state={{ data: flat }}>
+    <Link to={"/lodge"} state={{ data: flat }}>
+      <div className="normImg">
+        <img src={flat.cover} alt="Appartement cosy" />
         <h2>{flat.title}</h2>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
