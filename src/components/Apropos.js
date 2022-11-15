@@ -6,7 +6,7 @@ import arrow from "../assets/img/arrow.svg";
 const Apropos = () => {
   return (
     <section className="aboutB">
-      <img src={apropos} alt="montagne" />
+      <img src={apropos} alt="montagne" className="mont" />
 
       <ul className="flexBetwen">
         <li className="dropdown dropTxt">
@@ -14,7 +14,7 @@ const Apropos = () => {
           <img src={arrow} alt="fléche" className="fleche" />
         </li>
         <p className="info">
-          La bienveillance fait partie des valeurs fondatrices de Kasa. Tou
+          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
           comportement discriminatoire ou de perturbation du voisinage
           entraînera une exclusion de notre plateforme.
         </p>

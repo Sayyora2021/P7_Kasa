@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/components/lodge.scss";
-// import Flat from "./Flat";
+import { useLocation } from "react-router-dom";
 
-const Lodge = (galery) => {
-  const { galery } = this.props;
+const Lodge = () => {
+  const location = useLocation();
+  const lodgeData = location.state.data;
   return (
     <section className="">
-      <div>
-        <Flat props={galery.pictures} />
-      </div>
+      <div>{lodgeData.id} </div>
+      <div>{lodgeData.pictures}</div>
     </section>
   );
 };

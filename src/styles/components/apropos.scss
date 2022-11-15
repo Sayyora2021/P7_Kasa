@@ -3,7 +3,7 @@
 .aboutB {
   @include banner;
 }
-.aboutB img {
+.mont {
   margin-top: 50px;
   border-radius: 25px;
   width: 100%;
@@ -28,7 +28,7 @@
   width: 40px;
   height: 30px;
   color: $white;
-  left: 500px;
+  left: 1050px;
   bottom: 15px;
   transition: transform 2s;
 }
@@ -56,5 +56,5 @@
 }
 .fleche:hover {
   transition: transform 500ms ease-in-out;
-  transform-origin: bottom (-50%);
+  transform-origin: bottom (50%);
 }
