@@ -1,9 +1,7 @@
-@import "./_settings.scss";
-
 .carts {
   background: #f7f7f7;
   border-radius: 25px;
-  margin-top: 150px;
+  margin-top: 10%;
   @media screen and (max-width: 480px) {
     background: none;
     margin-top: 20px;

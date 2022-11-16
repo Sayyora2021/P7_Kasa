@@ -1,5 +1,6 @@
-@import "./_settings.scss";
-
+.about {
+  margin-bottom: 40px;
+}
 .aboutB {
   @include banner;
 }
@@ -14,7 +15,7 @@
     left: 30px;
   }
 }
-.dropdown {
+.box {
   position: relative;
   background-color: $txtcolor;
   width: 1100px;
@@ -22,17 +23,28 @@
   border-radius: 5px;
   margin-top: 50px;
   margin-left: 250px;
+  //   transition: 2s;
+}
+.dropdown {
+  width: 10%;
+  display: flex;
+  padding-right: 5px;
+  left: 1050px;
+  bottom: 15px;
+  transition: 330ms ease-in-out;
 }
 .fleche {
   position: absolute;
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
   color: $white;
   left: 1050px;
   bottom: 15px;
-  transition: transform 2s;
 }
-.dropTxt {
+.fleche:hover {
+  transform: rotate(180deg);
+}
+h2 {
   font-size: 24px;
   color: $white;
   padding-top: 10px;
@@ -47,14 +59,15 @@
   background-color: $background;
   width: 1100px;
   height: 150px;
-  left: 280px;
+  left: 270px;
+  // font-size: 24px;
+  // color: $txtcolor;
+}
+p {
   font-size: 24px;
   color: $txtcolor;
+  padding: 20px;
 }
 .footer {
   top: 600px;
-}
-.fleche:hover {
-  transition: transform 500ms ease-in-out;
-  transform-origin: bottom (50%);
 }

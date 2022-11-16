@@ -3,16 +3,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Lodge from "./Lodge";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route exact path="/lodge/:id" element={<Lodge />} />
         {/*<Route path= "*" element ={<error />} />*/}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

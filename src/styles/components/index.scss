@@ -1,4 +1,10 @@
-
-//@import "./styles/Navigation.css";
-//@import "./components/banner";
- 
+@import "./normalize.scss";
+@import "./reset.scss";
+@import "./settings";
+@import "./navigation.scss";
+@import "./_banner.scss";
+@import "./cart.scss";
+@import "./flat.scss";
+@import "./footer.scss";
+@import "./apropos.scss";
+@import "./lodge.scss";

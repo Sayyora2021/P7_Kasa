@@ -1,23 +1,24 @@
-@import "./_settings.scss";
-
 .footer {
+  background: #000000;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+.normFooter {
   position: relative;
   width: 100%;
   height: 209px;
-  background: #000000;
   padding-top: 30px;
   margin-top: 20px;
   padding-bottom: 30px;
-  @media screen and (max-width: 480px) {
-    width: 850px;
-  }
 }
 .footlogo {
   position: absolute;
   top: 100px;
   left: 50%;
   @media screen and (max-width: 480px) {
-    left: 350px;
+    left: 500px;
   }
 }
 .footer h3 {
@@ -27,6 +28,6 @@
   left: 40%;
   top: 150px;
   @media screen and (max-width: 480px) {
-    left: 250px;
+    left: 400px;
   }
 }
