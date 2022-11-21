@@ -4,7 +4,7 @@ import arrow from "../assets/img/arrow.svg";
 const Down = ({ title, description, equipment }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flexBetwen">
+    <div className="flexBetween">
       <div className="box">
         <h2 key={title}>{title}</h2>
 

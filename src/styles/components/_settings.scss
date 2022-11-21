@@ -3,7 +3,7 @@ $white: #ffffff;
 $background: #f7f7f7;
 
 body {
-  // padding: 60px;
+  padding: 60px;
   width: 1240px;
   max-width: auto;
   margin: 0 auto;
@@ -14,7 +14,7 @@ body {
   font-style: normal;
   font-weight: 500;
   @media screen and (max-width: 480px) {
-    width: 375px;
+    width: 480px;
     max-width: auto;
     margin: 10px;
     align-items: center;

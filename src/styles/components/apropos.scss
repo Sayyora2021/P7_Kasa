@@ -1,14 +1,12 @@
 .about {
   margin: 4rem auto;
   width: 85%;
-  padding-top: 5px;
+
   @media screen and (max-width: 480px) {
-    width: 95%;
+    width: 100%;
+    margin-top: 150px;
   }
 }
-// .aboutB {
-//   @include banner;
-// }
 
 .mont {
   margin-top: 50px;
@@ -18,71 +16,57 @@
   @media screen and (max-width: 480px) {
   }
 }
-.box {
-  display: flex;
-  background-color: $txtcolor;
-  justify-content: space-between;
-  border-radius: 5px;
-  padding: 1rem 1.5rem;
-  margin: 40px;
-  margin-bottom: 0;
-  width: 1023px;
-  height: 47px;
 
-  @media screen and (max-width: 480px) {
-    font-size: 13px;
-    width: 335px;
-    height: 30px;
-  }
-}
-.box h2 {
-  color: $white;
-  font-size: 24px;
-  font-weight: 500;
-  width: 97px;
-  height: 34px;
-  position: relative;
-  top: 15px;
-}
-.dropdown {
-  transition: 330ms ease-in-out;
-  width: 28.92px;
-  height: 28.92px;
-  @media screen and (max-width: 480px) {
-    width: 18.46px;
-    height: 18.42px;
-  }
-}
-
-.open {
-  transform: rotate(180deg);
-}
+// .box h2 {
+//   color: $white;
+//   font-size: 24px;
+//   font-weight: 500;
+//   width: 97px;
+//   height: 34px;
+//   position: relative;
+//   top: 15px;
+// }
 
 .flexBetween {
   margin-bottom: 30px;
-  @media screen and (max-width: 480px) {
-    margin: 0;
-    width: 100%;
+  .box {
+    display: flex;
+    background-color: $txtcolor;
+    color: $white;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      @media screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+    .dropdown {
+      transition: 330ms ease-in-out;
+
+      @media screen and (max-width: 480px) {
+        width: 18.46px;
+      }
+    }
+    .open {
+      transform: rotate(180deg);
+    }
   }
-}
-.info {
-  background-color: $background;
-  color: $txtcolor;
-  font-size: 24px;
-  font-weight: 400;
-  padding: 20px;
-  border-radius: 0px 0px 5px 5px;
-  line-height: 3.54rem;
-  animation: slide 1.2s ease-in-out forwards;
-  margin-top: 0;
-  margin-left: 45px;
-  width: 1023px;
-  height: 146px;
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-    line-height: 3.54rem;
-    width: 335px;
-    height: 143.65px;
+  .info {
+    background-color: $background;
+    color: $txtcolor;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+    line-height: 2.14rem;
+    animation: slide_description 1.2s ease-in-out forwards;
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+      line-height: 3.54rem;
+    }
   }
 }
 

@@ -1,26 +1,17 @@
 .nav-active {
-  text-decoration: none;
+  border-bottom: 2px solid $txtcolor;
+  width: auto;
 }
 .home {
   color: $txtcolor;
   border-bottom: 2px solid white;
-  width: 136px;
-  &:hover {
-    border-bottom: 2px solid $txtcolor;
-  }
   @media screen and (max-width: 480px) {
-    width: 59px;
   }
 }
 .nav {
   color: $txtcolor;
   border-bottom: 2px solid white;
-  width: 116px;
-  &:hover {
-    border-bottom: 2px solid $txtcolor;
-  }
   @media screen and (max-width: 480px) {
-    width: 71px;
   }
 }
 .navigation {
@@ -46,9 +37,9 @@ header {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media screen and (max-width: 480px) {
     height: 47px;
-    width: 335px;
     margin: 20px;
   }
 }
@@ -61,3 +52,6 @@ header {
     height: 47px;
   }
 }
+// .navigation a {
+//   text-decoration: none;
+// }
