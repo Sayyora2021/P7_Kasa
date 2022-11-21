@@ -1,73 +1,91 @@
 .about {
-  margin-bottom: 40px;
+  margin: 4rem auto;
+  width: 85%;
+  padding-top: 5px;
+  @media screen and (max-width: 480px) {
+    width: 95%;
+  }
 }
-.aboutB {
-  @include banner;
-}
+// .aboutB {
+//   @include banner;
+// }
+
 .mont {
   margin-top: 50px;
   border-radius: 25px;
   width: 100%;
   filter: brightness(0.7);
   @media screen and (max-width: 480px) {
-    width: 100%;
-    height: 300px;
-    left: 30px;
   }
 }
 .box {
-  position: relative;
+  display: flex;
   background-color: $txtcolor;
-  width: 1100px;
-  height: 47px;
+  justify-content: space-between;
   border-radius: 5px;
-  margin-top: 50px;
-  margin-left: 250px;
-  //   transition: 2s;
+  padding: 1rem 1.5rem;
+  margin: 40px;
+  margin-bottom: 0;
+  width: 1023px;
+  height: 47px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
+    width: 335px;
+    height: 30px;
+  }
+}
+.box h2 {
+  color: $white;
+  font-size: 24px;
+  font-weight: 500;
+  width: 97px;
+  height: 34px;
+  position: relative;
+  top: 15px;
 }
 .dropdown {
-  width: 10%;
-  display: flex;
-  padding-right: 5px;
-  left: 1050px;
-  bottom: 15px;
   transition: 330ms ease-in-out;
+  width: 28.92px;
+  height: 28.92px;
+  @media screen and (max-width: 480px) {
+    width: 18.46px;
+    height: 18.42px;
+  }
 }
-.fleche {
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  color: $white;
-  left: 1050px;
-  bottom: 15px;
-}
-.fleche:hover {
+
+.open {
   transform: rotate(180deg);
 }
-h2 {
-  font-size: 24px;
-  color: $white;
-  padding-top: 10px;
-  padding-left: 10px;
-}
+
 .flexBetween {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
+  @media screen and (max-width: 480px) {
+    margin: 0;
+    width: 100%;
+  }
 }
 .info {
-  position: absolute;
   background-color: $background;
-  width: 1100px;
-  height: 150px;
-  left: 270px;
-  // font-size: 24px;
-  // color: $txtcolor;
-}
-p {
-  font-size: 24px;
   color: $txtcolor;
+  font-size: 24px;
+  font-weight: 400;
   padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+  line-height: 3.54rem;
+  animation: slide 1.2s ease-in-out forwards;
+  margin-top: 0;
+  margin-left: 45px;
+  width: 1023px;
+  height: 146px;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 3.54rem;
+    width: 335px;
+    height: 143.65px;
+  }
 }
+
 .footer {
   top: 600px;
 }

@@ -3,22 +3,45 @@ $white: #ffffff;
 $background: #f7f7f7;
 
 body {
-  padding: 60px;
-  width: 100%;
-  max-width: 1600px;
-  min-width: 1200px;
+  // padding: 60px;
+  width: 1240px;
+  max-width: auto;
   margin: 0 auto;
   height: 100vh;
+  font-family: "Montserrat";
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
   font-style: normal;
   font-weight: 500;
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 375px;
+    max-width: auto;
+    margin: 10px;
+    align-items: center;
   }
 }
-@mixin banner {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
+// @mixin banner {
+//   width: 100%;
+//   height: auto;
+//   margin-top: 30px;
+// }
+@keyframes slide {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+footer {
+  padding: 0;
+  width: 1440px;
+  @media screen and (max-width: 480px) {
+    width: 345px;
+    height: 209px;
+  }
 }

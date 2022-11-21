@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 
 const Navigation = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src={logo} alt="Kasa" />
 
       <ul className="navigation">
@@ -15,10 +15,10 @@ const Navigation = () => {
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li className="home">A Propos</li>
+          <li className="nav">A Propos</li>
         </NavLink>
       </ul>
-    </div>
+    </header>
   );
 };
 

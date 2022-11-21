@@ -12,14 +12,14 @@ const Cart = () => {
   //   axios.get("logements.json").then((res) => setCard(res.data));
   // }, []);
   return (
-    <section className="carts">
-      <div className="normTxt">
+    <main className="carts">
+      <section className="normTxt">
         {locations.map((flat, index) => (
           <Flat key={index} flat={flat} />
         ))}
         ;
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 

@@ -1,12 +1,18 @@
 import React from "react";
-import background from "../assets/img/background.png";
 
+const guest = window.location;
+console.log(guest);
 const Banner = () => {
+  let isHomeBanner = guest.pathname === "/";
   return (
-    <div className="banner">
-      <img src={background} alt="banner page" className="banner-img" />
-      <h1>Chez vous, partout et ailleurs</h1>
-    </div>
+    <section className={isHomeBanner ? "banner  media-banner" : "banner"}>
+      <div
+        className={
+          isHomeBanner ? "banner-img home-banner" : "banner-img about-banner"
+        }
+      ></div>
+      {isHomeBanner && <h1>Chez vous, partout et ailleurs</h1>}
+    </section>
   );
 };
 
