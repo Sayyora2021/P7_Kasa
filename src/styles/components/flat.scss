@@ -1,4 +1,15 @@
-.normImg > img {
+figure {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.normImg {
   width: 340px;
   height: 340px;
   border-radius: 10px;
@@ -14,7 +25,7 @@
   }
 }
 
-.normImg h2 {
+figcaption {
   position: absolute;
   left: 60px;
   top: 80%;
@@ -30,15 +41,5 @@
     left: 19.71px;
     line-height: 25.67px;
     font-weight: 500;
-  }
-}
-.normImg {
-  width: 100%;
-  padding: 20px;
-  position: relative;
-  box-sizing: border-box;
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    padding: 10px;
   }
 }

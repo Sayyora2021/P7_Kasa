@@ -5,10 +5,10 @@ import React from "react";
 const Flat = ({ flat }) => {
   return (
     <Link key={flat.id} to={`/lodge/${flat.id}`}>
-      <div className="normImg">
-        <img src={flat.cover} alt="Appartement cosy" />
-        <h2>{flat.title}</h2>
-      </div>
+      <figure>
+        <img src={flat.cover} alt="Appartement cosy" className="normImg" />
+        <figcaption>{flat.title}</figcaption>
+      </figure>
     </Link>
   );
 };
