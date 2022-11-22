@@ -4,7 +4,7 @@
   width: 100%;
   @media screen and (max-width: 480px) {
     background: none;
-    width: 335px;
+    width: 90%;
     margin: 20px;
   }
 }
@@ -15,8 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   @media screen and (max-width: 480px) {
-    padding: 10px;
-    width: 95%;
-    padding-top: 0;
+    flex-direction: column;
+    padding: 0;
   }
 }

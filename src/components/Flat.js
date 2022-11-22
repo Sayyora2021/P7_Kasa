@@ -6,8 +6,10 @@ const Flat = ({ flat }) => {
   return (
     <Link key={flat.id} to={`/lodge/${flat.id}`}>
       <figure>
-        <img src={flat.cover} alt="Appartement cosy" className="normImg" />
-        <figcaption>{flat.title}</figcaption>
+        <img src={flat.cover} alt="Appartement cosy" classname="normImg" />
+        <figcaption>
+          <h2>{flat.title}</h2>
+        </figcaption>
       </figure>
     </Link>
   );

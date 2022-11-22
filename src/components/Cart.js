@@ -17,7 +17,6 @@ const Cart = () => {
         {locations.map((flat, index) => (
           <Flat key={index} flat={flat} />
         ))}
-        ;
       </section>
     </main>
   );
