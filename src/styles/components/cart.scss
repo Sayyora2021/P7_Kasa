@@ -4,7 +4,8 @@
   width: 100%;
   @media screen and (max-width: 480px) {
     background: none;
-    width: 100%;
+    width: 335px;
+    margin: 20px;
   }
 }
 .normTxt {
@@ -16,5 +17,6 @@
   @media screen and (max-width: 480px) {
     padding: 10px;
     width: 95%;
+    padding-top: 0;
   }
 }

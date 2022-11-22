@@ -3,19 +3,19 @@
   width: 85%;
 
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 335px;
     margin-top: 150px;
   }
 }
 
-.mont {
-  margin-top: 50px;
-  border-radius: 25px;
-  width: 100%;
-  filter: brightness(0.7);
-  @media screen and (max-width: 480px) {
-  }
-}
+// .mont {
+//   margin-top: 50px;
+//   border-radius: 25px;
+//   width: 100%;
+//   filter: brightness(0.7);
+//   @media screen and (max-width: 480px) {
+//   }
+// }
 
 // .box h2 {
 //   color: $white;
@@ -68,8 +68,4 @@
       line-height: 3.54rem;
     }
   }
-}
-
-.footer {
-  top: 600px;
 }

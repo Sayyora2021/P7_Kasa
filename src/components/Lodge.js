@@ -13,7 +13,7 @@ const Lodge = () => {
     <section className="">
       {lodge.map((flat) => (
         <div className="img-size">
-          {flat.title}
+          {flat.pictures}
           {/* <img src={flat.pictures} alt="photo de l'appartement" /> */}
         </div>
       ))}
