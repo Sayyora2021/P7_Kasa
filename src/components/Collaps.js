@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import arrow from "../assets/img/arrow.svg";
 
-const Down = ({ title, description, equipment }) => {
+const Collaps = ({ title, description, equipments }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flexBetween">
@@ -17,11 +17,17 @@ const Down = ({ title, description, equipment }) => {
       </div>
       {isOpen && (
         <div className="info">
-          {description} {equipment}
+          {/* {description.map((useDesc) => (
+            <div>{useDesc}</div>
+          ))} */}
+          {description}
+          {equipments.map((useEquip) => (
+            <div className="">{useEquip}</div>
+          ))}
         </div>
       )}
     </div>
   );
 };
 
-export default Down;
+export default Collaps;

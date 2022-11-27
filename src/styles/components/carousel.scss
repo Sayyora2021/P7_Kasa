@@ -1,0 +1,26 @@
+.photo {
+  height: 415px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.imgSize {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.vectorRight {
+  width: 46.68px;
+  height: 79.2px;
+  position: absolute;
+  left: 23px;
+  top: 40%;
+}
+.vectorLeft {
+  position: absolute;
+  right: 23px;
+  top: 40%;
+  rotate: 180deg;
+}

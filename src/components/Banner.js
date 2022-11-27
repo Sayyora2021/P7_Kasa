@@ -11,7 +11,9 @@ const Banner = () => {
           isHomeBanner ? "banner-img home-banner" : "banner-img about-banner"
         }
       ></div>
-      {isHomeBanner && <h1>Chez vous, partout et ailleurs</h1>}
+      {isHomeBanner && (
+        <h1 className="txtBanner">Chez vous, partout et ailleurs</h1>
+      )}
     </section>
   );
 };
