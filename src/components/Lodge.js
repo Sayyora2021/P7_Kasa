@@ -5,7 +5,6 @@ import Carousel from "./Carousel";
 import LodgeInfo from "./LodgeInfo";
 import Tags from "./Tags.js";
 import Stars from "./Stars.js";
-import Description from "./Description";
 import Collaps from "./Collaps";
 
 const Lodge = () => {
@@ -33,11 +32,12 @@ const Lodge = () => {
             <Tags key={"tags"} tags={lodgeId.tags} />
             <Stars key={"rating"} rating={lodgeId.rating} />
           </div>
-
+          <Collaps title="Description" description={lodgeId.description} />
           <Collaps
-            key={"equipment"}
-            equipments={lodgeId.equipments}
             title="Équipements"
+            description={lodgeId.equipments.map((useEquip) => (
+              <div>{useEquip}</div>
+            ))}
           />
         </div>
       )}

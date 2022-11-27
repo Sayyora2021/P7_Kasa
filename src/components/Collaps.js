@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import arrow from "../assets/img/arrow.svg";
 
-const Collaps = ({ title, description, equipments }) => {
+const Collaps = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flexBetween">
@@ -15,17 +15,7 @@ const Collaps = ({ title, description, equipments }) => {
           alt="fleche"
         />
       </div>
-      {isOpen && (
-        <div className="info">
-          {/* {description.map((useDesc) => (
-            <div>{useDesc}</div>
-          ))} */}
-          {description}
-          {equipments.map((useEquip) => (
-            <div className="">{useEquip}</div>
-          ))}
-        </div>
-      )}
+      {isOpen && <div className="info">{description}</div>}
     </div>
   );
 };
