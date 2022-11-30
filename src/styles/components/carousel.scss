@@ -3,12 +3,21 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 255px;
+  }
 }
 .imgSize {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .vectorRight {
@@ -17,10 +26,21 @@
   position: absolute;
   left: 23px;
   top: 40%;
+  @media screen and (max-width: 480px) {
+    width: 11.67px;
+    height: 19.8px;
+    top: 50%;
+  }
 }
 .vectorLeft {
   position: absolute;
   right: 23px;
   top: 40%;
   rotate: 180deg;
+  @media screen and (max-width: 480px) {
+    width: 11.67px;
+    height: 19.8px;
+    text-shadow: 1px 1px 2px black;
+    top: 50%;
+  }
 }

@@ -8,12 +8,12 @@ const LodgeInfo = ({ title, location, name, picture }) => {
           <h1 className="title">{title}</h1>
           <h3 className="loc">{location}</h3>
         </div>
-        <div className="author">
-          <h3 className="name">
-            {name}
-            <img src={picture} alt="le propriétaire" className="host" />
-          </h3>
-        </div>
+      </div>
+      <div className="author">
+        <h3 className="name">
+          {name}
+          <img src={picture} alt="le propriétaire" className="host" />
+        </h3>
       </div>
     </div>
   );

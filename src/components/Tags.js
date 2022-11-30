@@ -3,8 +3,10 @@ import React from "react";
 const Tags = ({ tags }) => {
   return (
     <div className="boxes">
-      {tags.map((tag) => (
-        <div className="minBox">{tag}</div>
+      {tags.map((tag, i) => (
+        <div className="minBox" key={i}>
+          {tag}
+        </div>
       ))}
     </div>
   );

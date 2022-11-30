@@ -1,19 +1,32 @@
 .infoLodge {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 .line {
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-right: 60px;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
-.column {
+.lineTag {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    margin-bottom: 10px;
+  }
 }
 .title {
   width: 635px;
@@ -23,6 +36,10 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 51.34px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    width: 100%;
+  }
 }
 .loc {
   font-size: 18px;
@@ -30,6 +47,9 @@
   height: 26px;
   line-height: 25.67px;
   color: $txtcolor;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 p {
   position: absolute;
@@ -37,6 +57,10 @@ p {
   left: 607px;
   color: $white;
   font-size: 18px;
+  @media screen and (max-width: 480px) {
+    top: 85%;
+    left: 50%;
+  }
 }
 .name {
   color: $txtcolor;
@@ -47,16 +71,28 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
 }
 .author {
-  width: 157px;
-  // display: flex;
-  flex-direction: row;
+  margin-top: 20px;
+  padding-left: 45px;
+  @media screen and (max-width: 480px) {
+    box-sizing: border-box;
+    position: relative;
+    top: 120px;
+  }
 }
 .host {
   width: 64px;
   height: 64px;
   border-radius: 35px;
+  @media screen and (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 .content {
   width: 100%;
@@ -72,12 +108,57 @@ p {
   text-align: center;
   font-size: 14px;
   line-height: 20px;
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    line-height: 14.26px;
+    width: 84px;
+    height: 18px;
+  }
 }
-
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.stars {
+  margin-top: 20px;
+  img {
+    @media screen and (max-width: 480px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 0px;
+  }
+}
 .boxes {
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.divise {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.one {
+  width: 90%;
+  max-width: 582px;
+  h2 {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+.one .info {
+  font-size: 18px;
+  // width: 543px;
+  height: 156px;
+  line-height: 25.67px;
+  @media screen and (max-width: 480px) {
+  }
 }

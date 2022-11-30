@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import React from "react";
-// import Lodge from "./Lodge";
 
 const Flat = ({ flat }) => {
   return (
     <Link key={flat.id} to={`/lodge/${flat.id}`}>
-      <figure>
-        <img src={flat.cover} alt="Appartement cosy" classname="normImg" />
-        <figcaption>
+      <figure className="figur">
+        <img src={flat.cover} alt="Appartement cosy" />
+        <figcaption className="flTitle">
           <h2>{flat.title}</h2>
         </figcaption>
       </figure>

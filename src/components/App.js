@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
-import Lodge from "./Lodge";
+import Lodge from "../pages/Lodge";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import NotFound from "./NotFound";
+import NotFound from "../pages/NotFound";
 
 const App = () => {
   return (
@@ -14,8 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route exact path="/lodge/:id" element={<Lodge />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="/lodge/:id" element={<Lodge />} />
+        <Route path="/*" exact element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

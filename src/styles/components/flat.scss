@@ -1,4 +1,4 @@
-figure {
+.figur {
   width: 100%;
   padding: 20px;
   position: relative;
@@ -9,7 +9,7 @@ figure {
   }
 }
 
-figure > img {
+.figur > img {
   width: 340px;
   height: 340px;
   border-radius: 10px;
@@ -25,7 +25,7 @@ figure > img {
   }
 }
 
-figcaption {
+.flTitle {
   position: absolute;
   bottom: 0;
   left: 0;
