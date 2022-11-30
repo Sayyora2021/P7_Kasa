@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import locations from "../logements.json";
 import { Navigate, useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
@@ -16,11 +16,11 @@ const Lodge = () => {
 
   //on cherche le id actuel avec find pour récupèrere ses élèments
   const lodgeId = locations.find((item) => item.id === id);
-
-  if (!lodgeId) {
-    return <Navigate to="/notfound" />;
-  }
-
+  useEffect(() => {
+    if (!lodgeId) {
+      <Navigate to="/notfound" />;
+    }
+  });
   return (
     <section>
       {lodgeId && (

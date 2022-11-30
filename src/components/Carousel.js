@@ -7,7 +7,7 @@ const Carousel = ({ pictures }) => {
   //longeur du tableau des photos
   const photosLength = pictures.length;
 
-  //photo suivante égale au longeur du tableau et on inc +1
+  //photo actuel est egale à 0(1), on montre -1 de array, sinon photo actuelle -1
   function nextSlide() {
     //setCurrentPhoto(currentPhoto === 0 ? photosLength - 1 : currentPhoto - 1);
     currentPhoto === 0
@@ -15,14 +15,14 @@ const Carousel = ({ pictures }) => {
       : setCurrentPhoto(currentPhoto - 1);
   }
 
-  // photo précedente égale à 0 on decrémente -1 de photo actuelle
+  // photo actuelle est égale à dernière photo, on montre 1re sinon photo actuelle +1
   function preSlide() {
     // setCurrentPhoto(currentPhoto === photosLength - 1 ? 0 : currentPhoto + 1);
     currentPhoto === photosLength - 1
       ? setCurrentPhoto(0)
       : setCurrentPhoto(currentPhoto + 1);
   }
-  // tous les photos est inf de 1
+  // tous les photos = sup de 1
   const allPhotos = photosLength > 1;
 
   return (
