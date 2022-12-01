@@ -1,6 +1,6 @@
 import React from "react";
-import star from "../assets/img/star.png";
-import empty from "../assets/img/starempty.png";
+import star from "../../assets/img/star.png";
+import empty from "../../assets/img/starempty.png";
 
 const Rate = ({ rating }) => {
   // on créé un tableau;

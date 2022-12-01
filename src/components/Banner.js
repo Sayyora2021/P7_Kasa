@@ -1,11 +1,12 @@
 import React from "react";
 
 const guest = window.location;
-console.log(guest);
+
 const Banner = () => {
+  //isHomeBanner est égale à la page d'accueil
   let isHomeBanner = guest.pathname === "/";
   return (
-    <section className={isHomeBanner ? "banner  media-banner" : "banner"}>
+    <section className={isHomeBanner ? "banner " : "banner"}>
       <div
         className={
           isHomeBanner ? "banner-img home-banner" : "banner-img about-banner"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vector from "../assets/img/vector.svg";
+import vector from "../../assets/img/vector.svg";
 
 const Carousel = ({ pictures }) => {
   //photo actuelle, on le met dans state
@@ -7,9 +7,8 @@ const Carousel = ({ pictures }) => {
   //longeur du tableau des photos
   const photosLength = pictures.length;
 
-  //photo actuel est egale à 0(1), on montre -1 de array, sinon photo actuelle -1
+  //photo actuel est egale à 0, on montre -1 de array, sinon photo actuelle -1
   function nextSlide() {
-    //setCurrentPhoto(currentPhoto === 0 ? photosLength - 1 : currentPhoto - 1);
     currentPhoto === 0
       ? setCurrentPhoto(photosLength - 1)
       : setCurrentPhoto(currentPhoto - 1);
@@ -17,7 +16,6 @@ const Carousel = ({ pictures }) => {
 
   // photo actuelle est égale à dernière photo, on montre 1re sinon photo actuelle +1
   function preSlide() {
-    // setCurrentPhoto(currentPhoto === photosLength - 1 ? 0 : currentPhoto + 1);
     currentPhoto === photosLength - 1
       ? setCurrentPhoto(0)
       : setCurrentPhoto(currentPhoto + 1);

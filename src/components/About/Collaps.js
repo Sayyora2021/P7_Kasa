@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import arrow from "../assets/img/arrow.svg";
+import arrow from "../../assets/img/arrow.svg";
 
 const Collaps = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
