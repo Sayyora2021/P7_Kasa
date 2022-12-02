@@ -1,0 +1,46 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $txtcolor;
+  margin: 100px;
+  @media screen and (max-width: 480px) {
+    margin: 110px 110px 140px 110px;
+  }
+  h1 {
+    font-size: 288px;
+    line-height: 410.69px;
+    font-weight: 700;
+    @media screen and (max-width: 480px) {
+      font-size: 96px;
+      line-height: 137px;
+    }
+  }
+  .errTxt {
+    font-size: 36px;
+    line-height: 51.34px;
+    color: $txtcolor;
+    text-align: center;
+    height: 51px;
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      line-height: 25.67px;
+      text-align: center;
+    }
+  }
+}
+
+.link {
+  color: $txtcolor;
+  font-size: 18px;
+  line-height: 25.67px;
+  font-weight: 500;
+  margin-top: 182px;
+  border-bottom: 1.9px solid $txtcolor;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 20px;
+    width: 220px;
+  }
+}
