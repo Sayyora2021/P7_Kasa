@@ -6,9 +6,8 @@ const Flat = ({ flat }) => {
     <Link key={flat.id} to={`/lodge/${flat.id}`}>
       <figure className="figur">
         <img src={flat.cover} alt="Appartement cosy" />
-        <figcaption className="flTitle">
-          <h2>{flat.title}</h2>
-        </figcaption>
+
+        <p className="cartTxt">{flat.title}</p>
       </figure>
     </Link>
   );

@@ -43,8 +43,8 @@ const Lodge = () => {
               <div className="one">
                 <Collaps
                   title="Équipements"
-                  description={lodgeId.equipments.map((useEquip) => (
-                    <div>{useEquip}</div>
+                  description={lodgeId.equipments.map((useEquip, i) => (
+                    <div key={i}>{useEquip}</div>
                   ))}
                 />
               </div>

@@ -1,28 +1,29 @@
 .nav-active {
   border-bottom: 2px solid $txtcolor;
-  width: auto;
 }
-.home {
-  color: $txtcolor;
-  border-bottom: 2px solid white;
-}
+
 .nav {
   color: $txtcolor;
   border-bottom: 2px solid white;
+  @media screen and (max-width: 480px) {
+    text-transform: uppercase;
+  }
 }
 .navigation {
   font-size: 24px;
   width: 309px;
   display: flex;
-  padding-right: 10px;
+
   height: 34px;
   align-items: center;
   justify-content: space-between;
-  padding-top: 17px;
+
   @media screen and (max-width: 480px) {
     width: 140px;
     height: 17px;
     font-size: 12px;
+    justify-content: flex-end;
+    gap: 10px;
   }
 }
 
@@ -35,7 +36,7 @@ header {
   align-items: center;
   @media screen and (max-width: 480px) {
     height: 47px;
-    margin: 20px;
+    margin: 5%;
     width: 90%;
   }
 }
@@ -48,6 +49,3 @@ header {
     height: 47px;
   }
 }
-// .navigation a {
-//   text-decoration: none;
-// }

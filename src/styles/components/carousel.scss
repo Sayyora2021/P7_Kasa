@@ -19,7 +19,18 @@
     height: 100%;
   }
 }
-
+.photo p {
+  position: absolute;
+  top: 357.67px;
+  left: 607px;
+  color: $white;
+  font-size: 18px;
+  background: none;
+  @media screen and (max-width: 480px) {
+    top: 85%;
+    left: 50%;
+  }
+}
 .vectorRight {
   width: 46.68px;
   height: 79.2px;
