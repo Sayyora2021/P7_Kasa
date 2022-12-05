@@ -1,39 +1,23 @@
-.infoLodge {
-  width: 100%;
-  display: flex;
-  @media screen and (max-width: 480px) {
-    // height: 46px;
-  }
-}
 .line {
-  width: 80%;
   margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding-right: 60px;
   @media screen and (max-width: 480px) {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 .lineTag {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  margin-bottom: 10px;
   @media screen and (max-width: 480px) {
-    flex-direction: column;
     align-items: flex-start;
-    width: 70%;
     margin-bottom: 10px;
   }
 }
 .title {
-  width: 635px;
-  height: auto;
   color: $txtcolor;
   display: flex;
   font-size: 36px;
@@ -41,6 +25,7 @@
   line-height: 51.34px;
   @media screen and (max-width: 480px) {
     font-size: 18px;
+    line-height: 25.67px;
   }
 }
 .loc {
@@ -53,30 +38,40 @@
     font-size: 14px;
   }
 }
-
+.hostRate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 82%;
+  margin-top: -15%;
+  height: 167px;
+  justify-content: space-around;
+  @media screen and (max-width: 480px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 214%;
+    height: 60px;
+    margin-bottom: 25px;
+  }
+}
 .name {
   color: $txtcolor;
   text-align: right;
   height: 52px;
   gap: 10px;
-  width: 93px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   @media screen and (max-width: 480px) {
     font-size: 12px;
     line-height: 17.11px;
+    height: 33px;
   }
 }
 .author {
   margin-top: 20px;
   padding-left: 45px;
-  @media screen and (max-width: 480px) {
-    box-sizing: border-box;
-    position: relative;
-    top: 120px;
-    // right: 140px;
-  }
 }
 .host {
   width: 64px;
@@ -86,6 +81,9 @@
     width: 32px;
     height: 32px;
   }
+}
+.rateBetween {
+  display: flex;
 }
 .content {
   width: 100%;
@@ -113,7 +111,7 @@
   flex-direction: column;
 }
 .stars {
-  margin-top: 20px;
+  display: flex;
   img {
     @media screen and (max-width: 480px) {
       width: 15px;

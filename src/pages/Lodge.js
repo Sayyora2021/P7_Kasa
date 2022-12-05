@@ -6,6 +6,7 @@ import LodgeInfo from "../components/Lodge/LodgeInfo";
 import Tags from "../components/Lodge/Tags.js";
 import Rate from "../components/Lodge/Rate.js";
 import Collaps from "../components/About/Collaps";
+import Host from "../components/Lodge/Host";
 
 const Lodge = () => {
   const { id } = useParams();
@@ -19,19 +20,18 @@ const Lodge = () => {
     return (
       <section>
         {lodgeId && (
-          <div>
+          <div className="lodgeContainer">
             <Carousel key={lodgeId.id} pictures={lodgeId.pictures} />
 
-            <LodgeInfo
-              title={lodgeId.title}
-              location={lodgeId.location}
-              name={lodgeId.host.name}
-              picture={lodgeId.host.picture}
-            />
+            <LodgeInfo title={lodgeId.title} location={lodgeId.location} />
             <div className="lineTag">
               <Tags tags={lodgeId.tags} />
-
-              <Rate rating={lodgeId.rating} />
+            </div>
+            <div className="rateBetween">
+              <div className="hostRate">
+                <Host name={lodgeId.host.name} picture={lodgeId.host.picture} />
+                <Rate rating={lodgeId.rating} />
+              </div>
             </div>
             <div className="divise">
               <div className="one ">
