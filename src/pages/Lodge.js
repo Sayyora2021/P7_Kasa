@@ -27,12 +27,12 @@ const Lodge = () => {
             <div className="lineTag">
               <Tags tags={lodgeId.tags} />
             </div>
-            <div className="rateBetween">
-              <div className="hostRate">
-                <Host name={lodgeId.host.name} picture={lodgeId.host.picture} />
-                <Rate rating={lodgeId.rating} />
-              </div>
+
+            <div className="hostRate">
+              <Host name={lodgeId.host.name} picture={lodgeId.host.picture} />
+              <Rate rating={lodgeId.rating} />
             </div>
+
             <div className="divise">
               <div className="one ">
                 <Collaps

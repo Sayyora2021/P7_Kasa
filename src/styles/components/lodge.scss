@@ -14,7 +14,6 @@
   margin-bottom: 10px;
   @media screen and (max-width: 480px) {
     align-items: flex-start;
-    margin-bottom: 10px;
   }
 }
 .title {
@@ -42,14 +41,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 82%;
+  padding-top: 10px;
   margin-top: -15%;
   height: 167px;
   justify-content: space-around;
   @media screen and (max-width: 480px) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    gap: 214%;
+
     height: 60px;
     margin-bottom: 25px;
   }
@@ -69,10 +68,7 @@
     height: 33px;
   }
 }
-.author {
-  margin-top: 20px;
-  padding-left: 45px;
-}
+
 .host {
   width: 64px;
   height: 64px;
@@ -82,9 +78,7 @@
     height: 32px;
   }
 }
-.rateBetween {
-  display: flex;
-}
+
 .content {
   width: 100%;
   height: 101px;
@@ -147,8 +141,12 @@
 }
 .one .info {
   font-size: 18px;
-  height: 156px;
+  height: 146px;
   line-height: 25.67px;
+  font-weight: 400;
   @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 17.11px;
+    height: auto;
   }
 }
