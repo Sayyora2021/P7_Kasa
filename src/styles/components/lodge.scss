@@ -1,6 +1,9 @@
 .infoLodge {
   width: 100%;
   display: flex;
+  @media screen and (max-width: 480px) {
+    // height: 46px;
+  }
 }
 .line {
   width: 80%;
@@ -38,7 +41,6 @@
   line-height: 51.34px;
   @media screen and (max-width: 480px) {
     font-size: 18px;
-    width: 100%;
   }
 }
 .loc {
@@ -51,17 +53,7 @@
     font-size: 14px;
   }
 }
-// p {
-//   position: absolute;
-//   top: 357.67px;
-//   left: 607px;
-//   color: $white;
-//   font-size: 18px;
-//   @media screen and (max-width: 480px) {
-//     top: 85%;
-//     left: 50%;
-//   }
-// }
+
 .name {
   color: $txtcolor;
   text-align: right;
@@ -83,6 +75,7 @@
     box-sizing: border-box;
     position: relative;
     top: 120px;
+    // right: 140px;
   }
 }
 .host {
