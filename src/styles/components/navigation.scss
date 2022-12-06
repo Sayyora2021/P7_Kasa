@@ -17,7 +17,11 @@
   height: 34px;
   align-items: center;
   justify-content: space-between;
-
+  @media screen and (max-width: 900px) {
+    width: auto;
+    gap: 20px;
+    font-size: 20px;
+  }
   @media screen and (max-width: 480px) {
     width: 140px;
     height: 17px;
@@ -34,6 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media screen and (max-width: 480px) {
     height: 47px;
     width: auto;
@@ -44,6 +49,10 @@ header {
   width: 210.32px;
   height: 68px;
   position: relative;
+  @media screen and (max-width: 900px) {
+    width: 180px;
+    height: 55px;
+  }
   @media screen and (max-width: 480px) {
     width: 145px;
     height: 47px;

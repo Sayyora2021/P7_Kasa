@@ -5,7 +5,9 @@
   position: relative;
   box-sizing: border-box;
   margin: 20px;
-
+  @media screen and (max-width: 900px) {
+    width: 480px;
+  }
   @media screen and (max-width: 480px) {
     margin: 10px;
     width: 100%;
@@ -30,7 +32,9 @@ p {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
   &:hover {
     transition: all 0.5s ease-in-out;
     transform: translateY(-2px) scale(1.1);

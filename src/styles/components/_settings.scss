@@ -6,8 +6,8 @@ $background: #f7f7f7;
   font-family: "Montserrat";
 }
 body {
-  width: 1240px;
-  max-width: auto;
+  width: auto;
+  max-width: 1240px;
   margin: 0 auto;
   height: 100vh;
   font-family: "Montserrat";
@@ -15,6 +15,9 @@ body {
   padding: 10px;
   font-style: normal;
   font-weight: 500;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
   @media screen and (max-width: 480px) {
     width: 90%;
   }

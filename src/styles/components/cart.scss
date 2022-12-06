@@ -2,19 +2,20 @@
   background: #f7f7f7;
   border-radius: 25px;
   width: 100%;
+
   @media screen and (max-width: 480px) {
     background: none;
     width: 100%;
   }
 }
 .normTxt {
-  padding: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media screen and (max-width: 480px) {
     flex-direction: column;
-    padding: 0;
   }
 }

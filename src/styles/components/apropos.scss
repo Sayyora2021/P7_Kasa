@@ -1,7 +1,9 @@
 .about {
   margin: 4rem auto;
   width: 85%;
-
+  @media screen and (max-width: 900px) {
+    margin: 2rem auto;
+  }
   @media screen and (max-width: 480px) {
     width: 100%;
     margin-top: 150px;

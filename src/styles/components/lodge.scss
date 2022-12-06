@@ -1,13 +1,21 @@
-// .lodgeContainer {
-//   @media screen and (max-width: 480px) {
-//     margin: 10px;
-//   }
-// }
+.lodgeContainer {
+  @media screen and (max-width: 900px) {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 480px) {
+    gap: 10px;
+  }
+}
 .line {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
   @media screen and (max-width: 480px) {
     flex-direction: column;
     align-items: flex-start;
@@ -16,9 +24,13 @@
 .lineTag {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
   @media screen and (max-width: 480px) {
-    align-items: flex-start;
+    margin: 0;
   }
 }
 .title {
@@ -50,12 +62,17 @@
   margin-top: -15%;
   height: 167px;
   justify-content: space-around;
+  @media screen and (max-width: 900px) {
+    flex-direction: row-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
   @media screen and (max-width: 480px) {
     flex-direction: row-reverse;
     justify-content: space-between;
-
-    height: 60px;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
   }
 }
 .name {
@@ -105,10 +122,7 @@
     height: 18px;
   }
 }
-.column {
-  display: flex;
-  flex-direction: column;
-}
+
 .stars {
   display: flex;
   img {
@@ -125,23 +139,27 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .divise {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+  }
 }
 .one {
   width: 90%;
-  max-width: 582px;
+  // max-width: 582px;
+  max-width: 45%;
+
   h2 {
     font-size: 18px;
   }
   @media screen and (max-width: 480px) {
     width: 100%;
+    max-width: 100%;
   }
 }
 .one .info {
@@ -149,6 +167,9 @@
   height: 146px;
   line-height: 25.67px;
   font-weight: 400;
+  @media screen and (max-width: 900px) {
+    height: auto;
+  }
   @media screen and (max-width: 480px) {
     font-size: 12px;
     line-height: 17.11px;
