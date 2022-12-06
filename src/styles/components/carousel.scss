@@ -5,7 +5,7 @@
   padding-top: 20px;
 
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 335px;
     height: 255px;
     padding-top: 0;
   }
@@ -27,10 +27,11 @@
   color: $white;
   font-size: 18px;
   background: none;
+  width: 0;
   @media screen and (max-width: 480px) {
     top: 85%;
     left: 50%;
-    width: 10px;
+    width: 0;
   }
 }
 .vectorRight {
