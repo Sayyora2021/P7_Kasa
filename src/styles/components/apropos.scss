@@ -46,8 +46,11 @@
     padding: 20px;
     border-radius: 0px 0px 5px 5px;
     line-height: 2.14rem;
-    height: 146px;
+    height: auto;
     animation: 2.2s ease-in-out forwards;
+    @media screen and (max-width: 900px) {
+      font-size: 18px;
+    }
     @media screen and (max-width: 480px) {
       font-size: 12px;
       line-height: 1.07rem;
