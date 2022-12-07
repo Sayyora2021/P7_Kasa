@@ -34,7 +34,6 @@
   }
 }
 .title {
-  color: $txtcolor;
   display: flex;
   font-size: 36px;
   font-weight: 500;
@@ -52,7 +51,6 @@
   width: auto;
   height: 26px;
   line-height: 25.67px;
-  color: $txtcolor;
   @media screen and (max-width: 480px) {
     font-size: 14px;
   }
@@ -75,11 +73,9 @@
   @media screen and (max-width: 480px) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    // margin-bottom: 25px;
   }
 }
 .name {
-  color: $txtcolor;
   text-align: right;
   height: 52px;
   gap: 10px;
