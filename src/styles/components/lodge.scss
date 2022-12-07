@@ -39,6 +39,9 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 51.34px;
+  @media screen and (max-width: 900px) {
+    font-size: 30px;
+  }
   @media screen and (max-width: 480px) {
     font-size: 18px;
     line-height: 25.67px;
