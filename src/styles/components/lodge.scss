@@ -1,8 +1,7 @@
 .lodgeContainer {
   @media screen and (max-width: 900px) {
     gap: 10px;
-    display: flex;
-    flex-direction: column;
+    @include display-column;
   }
   @media screen and (max-width: 480px) {
     gap: 10px;
@@ -10,8 +9,7 @@
 }
 .line {
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
+  @include display-column;
   justify-content: space-between;
   @media screen and (max-width: 900px) {
     margin: 0;
@@ -56,8 +54,7 @@
   }
 }
 .hostRate {
-  display: flex;
-  flex-direction: column;
+  @include display-column;
   align-items: flex-end;
   padding-top: 10px;
   margin-top: -15%;
@@ -79,9 +76,7 @@
   text-align: right;
   height: 52px;
   gap: 10px;
-
-  display: flex;
-  flex-direction: row;
+  @include display-row;
   align-items: center;
   @media screen and (max-width: 480px) {
     font-size: 12px;
@@ -135,14 +130,12 @@
   }
 }
 .boxes {
-  display: flex;
-  flex-direction: row;
+  @include display-row;
   gap: 10px;
 }
 
 .divise {
-  display: flex;
-  justify-content: space-between;
+  @include justify-between;
   flex-wrap: wrap;
   @media screen and (max-width: 900px) {
     flex-direction: row;
@@ -150,7 +143,6 @@
 }
 .one {
   width: 90%;
-  // max-width: 582px;
   max-width: 45%;
 
   h2 {

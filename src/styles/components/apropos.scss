@@ -13,10 +13,9 @@
 .flexBetween {
   margin-bottom: 30px;
   .box {
-    display: flex;
+    @include justify-between;
     background-color: $txtcolor;
     color: $white;
-    justify-content: space-between;
     border-radius: 5px;
     padding: 1rem 1.5rem;
     h2 {

@@ -36,3 +36,20 @@ body {
 a {
   text-decoration: none;
 }
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin display-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}

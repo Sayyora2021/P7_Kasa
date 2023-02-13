@@ -2,8 +2,7 @@
   background: #000000;
   color: $white;
   height: 209px;
-  display: flex;
-  flex-direction: column;
+  @include display-column;
   justify-content: center;
   align-items: center;
 

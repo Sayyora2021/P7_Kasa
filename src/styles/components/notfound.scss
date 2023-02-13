@@ -1,7 +1,5 @@
 .error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include display-column;
   color: $txtcolor;
   margin: 22px 6%;
 }
