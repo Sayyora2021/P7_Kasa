@@ -1,0 +1,55 @@
+$txtcolor: #ff6060;
+$white: #ffffff;
+$background: #f7f7f7;
+
+* {
+  font-family: "Montserrat";
+}
+body {
+  width: auto;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Montserrat";
+  cursor: pointer;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  color: $txtcolor;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin display-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}

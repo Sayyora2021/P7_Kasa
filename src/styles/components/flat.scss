@@ -1,0 +1,54 @@
+.figur {
+  width: 340px;
+  height: 340px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 20px;
+  @media screen and (max-width: 900px) {
+    width: 480px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 10px;
+    width: 100%;
+    margin: 10px;
+    margin-left: 0;
+    height: 255px;
+  }
+}
+p {
+  width: 89%;
+  height: 28%;
+  border-radius: 0 0 10px 0;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.figur > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-2px) scale(1.1);
+  }
+}
+
+.cartTxt {
+  position: absolute;
+  font-size: 18px;
+  color: $white;
+  top: 71.82%;
+  bottom: 5.88%;
+  line-height: 142.6%;
+  font-weight: 500;
+  width: 90%;
+  padding-right: 5%;
+  padding-left: 5%;
+}

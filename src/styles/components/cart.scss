@@ -1,0 +1,20 @@
+.carts {
+  background: #f7f7f7;
+  border-radius: 25px;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    background: none;
+    width: 100%;
+  }
+}
+.normTxt {
+  width: 100%;
+  @include display-row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+}

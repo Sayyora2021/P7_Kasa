@@ -1,0 +1,169 @@
+.lodgeContainer {
+  @media screen and (max-width: 900px) {
+    gap: 10px;
+    @include display-column;
+  }
+  @media screen and (max-width: 480px) {
+    gap: 10px;
+  }
+}
+.line {
+  margin-top: 10px;
+  @include display-column;
+  justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.lineTag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
+}
+.title {
+  display: flex;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  @media screen and (max-width: 900px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+}
+.loc {
+  font-size: 18px;
+  width: auto;
+  height: 26px;
+  line-height: 25.67px;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+.hostRate {
+  @include display-column;
+  align-items: flex-end;
+  padding-top: 10px;
+  margin-top: -15%;
+  height: 167px;
+  justify-content: space-around;
+  @media screen and (max-width: 900px) {
+    flex-direction: row-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.name {
+  text-align: right;
+  height: 52px;
+  gap: 10px;
+  @include display-row;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 17.11px;
+    height: 33px;
+  }
+}
+
+.host {
+  width: 64px;
+  height: 64px;
+  border-radius: 35px;
+  @media screen and (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 101px;
+  display: flex;
+}
+.minBox {
+  border-radius: 10px;
+  background-color: $txtcolor;
+  width: 115px;
+  height: 25px;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    line-height: 14.26px;
+    width: 84px;
+    height: 18px;
+  }
+}
+
+.stars {
+  display: flex;
+  img {
+    @media screen and (max-width: 480px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 0px;
+  }
+}
+.boxes {
+  @include display-row;
+  gap: 10px;
+}
+
+.divise {
+  @include justify-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 900px) {
+    flex-direction: row;
+  }
+}
+.one {
+  width: 90%;
+  max-width: 45%;
+
+  h2 {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.one .info {
+  font-size: 18px;
+  height: 146px;
+  line-height: 25.67px;
+  font-weight: 400;
+  @media screen and (max-width: 900px) {
+    height: auto;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 17.11px;
+    height: auto;
+  }
+}
